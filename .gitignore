@@ -1,0 +1,28 @@
+# Secrets and local environment
+.env
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+credentials.local.json
+secrets/
+
+# Dependencies and generated output
+node_modules/
+vendor/
+.venv/
+venv/
+dist/
+build/
+
+# Editor and operating-system files
+.vscode/
+.idea/
+*.suo
+.DS_Store
+Thumbs.db
+
+# Local preview artifact
+/mobile-preview.png

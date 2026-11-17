@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1f33">
+  <meta name="description" content="Synqra is an AI-native supply-chain command center for detecting disruptions and coordinating operational response.">
+  <title>Synqra | Supply-chain command center</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Synqra home">
+        <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 3.5 29.5 10v16L18 32.5 6.5 26V10L18 3.5Z" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="m11.5 22 6-10 7 12M11.5 22l6-10 7 12M11.5 22h13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>synqra</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation" data-nav-toggle>
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary navigation" data-nav>
+        <a href="#platform">Platform</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#integrations">Integrations</a>
+        <a class="nav-cta" href="#demo">Request a demo</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy" data-reveal>
+          <div class="eyebrow"><span class="status-dot"></span> AI-native supply-chain command</div>
+          <h1>See the disruption.<br><span>Map the impact.</span></h1>
+          <p class="hero-lede">Synqra gives automotive supply-chain teams one operational view of emerging disruptions, likely impact paths, and coordinated next actions.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#demo">Request a demo <span aria-hidden="true">→</span></a>
+            <a class="text-link" href="#platform">Explore the platform <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-proof" aria-label="Key platform areas">
+            <div><strong>01</strong><span>Detect</span></div>
+            <div><strong>02</strong><span>Assess</span></div>
+            <div><strong>03</strong><span>Act</span></div>
+          </div>
+        </div>
+
+        <div class="command-preview" aria-label="Illustration of the Synqra command center" data-reveal>
+          <div class="preview-toolbar">
+            <div>
+              <span class="toolbar-label">COMMAND CENTER</span>
+              <strong>North America Operations</strong>
+            </div>
+            <div class="toolbar-status"><span></span> Live view</div>
+          </div>
+          <div class="preview-body">
+            <aside class="preview-sidebar" aria-hidden="true">
+              <span class="side-icon active"></span>
+              <span class="side-icon"></span>
+              <span class="side-icon"></span>
+              <span class="side-icon"></span>
+              <span class="side-icon bottom"></span>
+            </aside>
+            <div class="preview-content">
+              <div class="preview-heading">
+                <div>
+                  <span class="micro-label">ACTIVE DISRUPTION</span>
+                  <h2>Battery module supply</h2>
+                </div>
+                <span class="severity">High confidence</span>
+              </div>
+
+              <div class="metrics">
+                <article>
+                  <span>Plants exposed</span>
+                  <strong>8</strong>
+                  <small>of 14 monitored</small>
+                </article>
+                <article>
+                  <span>Likely impact</span>
+                  <strong>Line 2</strong>
+                  <small>Sequence 1,240</small>
+                </article>
+                <article>
+                  <span>Time to decision</span>
+                  <strong>36h</strong>
+                  <small>Earliest constraint</small>
+                </article>
+              </div>
+
+              <div class="supply-map">
+                <div class="map-header">
+                  <span>LIKELY IMPACT PATH</span>
+                  <span class="map-key"><i></i> Primary constraint</span>
+                </div>
+                <div class="map-canvas" aria-label="Supply impact path from supplier to assembly plant">
+                  <svg viewBox="0 0 560 190" role="img" aria-label="Impact path visualization">
+                    <defs>
+                      <marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+                        <path d="M0,0 L8,4 L0,8 Z" fill="#b5c1cc"/>
+                      </marker>
+                    </defs>
+                    <path d="M105 95 C170 95 180 48 250 48" fill="none" stroke="#b5c1cc" stroke-width="2" marker-end="url(#arrow)" />
+                    <path d="M105 95 C170 95 180 138 250 138" fill="none" stroke="#d5dde4" stroke-width="2" marker-end="url(#arrow)" />
+                    <path d="M318 48 C375 48 388 95 450 95" fill="none" stroke="#c54b32" stroke-width="3" marker-end="url(#arrow)" />
+                    <path d="M318 138 C375 138 388 95 450 95" fill="none" stroke="#b5c1cc" stroke-width="2" marker-end="url(#arrow)" />
+                  </svg>
+                  <div class="map-node supplier"><span>SUPPLIER</span><strong>MX-042</strong><small>Severity elevated</small></div>
+                  <div class="map-node plant-a"><span>DC / 14</span><strong>Regional hub</strong></div>
+                  <div class="map-node plant-b"><span>DC / 22</span><strong>Plant buffer</strong></div>
+                  <div class="map-node assembly"><span>ASSEMBLY</span><strong>NA-Plant 08</strong><small>Constraint: 36h</small></div>
+                </div>
+              </div>
+
+              <div class="recommendation">
+                <div class="recommendation-icon" aria-hidden="true">✓</div>
+                <div>
+                  <span>RECOMMENDED ACTION</span>
+                  <strong>Reallocate 240 units from approved alternate source</strong>
+                </div>
+                <button type="button" data-scroll-demo>Review</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="signal-strip" aria-label="Synqra capabilities">
+      <div class="container signal-grid">
+        <article><span>01</span><strong>Disruption detection</strong><p>Monitor events across suppliers and network nodes.</p></article>
+        <article><span>02</span><strong>Impact tracing</strong><p>Trace potential effects through bills of material.</p></article>
+        <article><span>03</span><strong>Human-approved action</strong><p>Keep operational teams in control of decisions.</p></article>
+      </div>
+    </section>
+
+    <section class="platform section" id="platform">
+      <div class="container">
+        <div class="section-heading" data-reveal>
+          <div>
+            <span class="section-kicker">THE PLATFORM</span>
+            <h2>From signals to decisions,<br>without losing operational context.</h2>
+          </div>
+          <p>Synqra connects supply-chain signals to the systems and people responsible for keeping production moving.</p>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card feature-card-primary" data-reveal>
+            <div class="feature-number">01</div>
+            <div class="feature-copy">
+              <h3>Detect disruption earlier</h3>
+              <p>Bring supplier, logistics, inventory, and operational signals into a unified risk view.</p>
+              <ul>
+                <li>Network-level event monitoring</li>
+                <li>Severity and confidence context</li>
+                <li>Near-real-time operational updates</li>
+              </ul>
+            </div>
+            <div class="feature-visual alert-visual" aria-hidden="true">
+              <div class="alert-card"><span class="alert-dot"></span><div><small>NEW SIGNAL</small><strong>Supplier capacity</strong></div><b>High</b></div>
+              <div class="alert-card muted"><span class="alert-dot amber"></span><div><small>LOGISTICS</small><strong>Lane delay</strong></div><b>Medium</b></div>
+            </div>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <div class="feature-number">02</div>
+            <div class="feature-copy">
+              <h3>Understand likely impact</h3>
+              <p>Trace a disruption across parts, plants, schedules, inventory, and alternate routes.</p>
+            </div>
+            <div class="mini-network" aria-hidden="true">
+              <span class="mini-node node-a">Part</span>
+              <span class="mini-line line-a"></span>
+              <span class="mini-node node-b">Plant</span>
+              <span class="mini-line line-b"></span>
+              <span class="mini-node node-c">Line</span>
+              <span class="mini-impact">Impact<br>36h</span>
+            </div>
+          </article>
+
+          <article class="feature-card" data-reveal>
+            <div class="feature-number">03</div>
+            <div class="feature-copy">
+              <h3>Coordinate the response</h3>
+              <p>Present evidence-backed options for review, approval, and coordinated execution.</p>
+            </div>
+            <div class="approval-visual" aria-hidden="true">
+              <div class="approval-row"><span>1</span><div><small>OPTION A</small><strong>Use alternate source</strong></div><b>Ready</b></div>
+              <div class="approval-row"><span>2</span><div><small>OPTION B</small><strong>Reschedule sequence</strong></div><b>Review</b></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="integrations section" id="integrations">
+      <div class="container integration-grid">
+        <div class="integration-copy" data-reveal>
+          <span class="section-kicker">SYSTEM OF ACTION</span>
+          <h2>Work with the systems you already trust.</h2>
+          <p>Connect operational data across planning, execution, inventory, and logistics. Synqra is designed to fit your existing technology landscape—not replace it overnight.</p>
+          <a class="text-link dark" href="#demo">Discuss your integration needs <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="system-map" aria-label="System integration categories" data-reveal>
+          <div class="system-center">
+            <svg viewBox="0 0 36 36" aria-hidden="true">
+              <path d="M18 3.5 29.5 10v16L18 32.5 6.5 26V10L18 3.5Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="m11.5 22 6-10 7 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <strong>Synqra</strong>
+          </div>
+          <div class="system-node erp"><span>ERP</span><small>Enterprise planning</small></div>
+          <div class="system-node mes"><span>MES</span><small>Manufacturing execution</small></div>
+          <div class="system-node wms"><span>WMS</span><small>Warehouse execution</small></div>
+          <div class="system-node tms"><span>TMS</span><small>Transportation</small></div>
+          <span class="connector c1"></span><span class="connector c2"></span><span class="connector c3"></span><span class="connector c4"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="workflow section" id="workflow">
+      <div class="container">
+        <div class="workflow-heading" data-reveal>
+          <span class="section-kicker">HOW IT WORKS</span>
+          <h2>Four steps from signal to approved action.</h2>
+        </div>
+        <ol class="workflow-list">
+          <li data-reveal><span class="step-number">01</span><div><h3>Ingest</h3><p>Connect operational data and external signals.</p></div></li>
+          <li data-reveal><span class="step-number">02</span><div><h3>Correlate</h3><p>Associate events with relevant parts and plants.</p></div></li>
+          <li data-reveal><span class="step-number">03</span><div><h3>Evaluate</h3><p>Model likely paths and compare possible actions.</p></div></li>
+          <li data-reveal><span class="step-number">04</span><div><h3>Approve</h3><p>Your team validates and initiates the response.</p></div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="demo-section" id="demo">
+      <div class="container demo-grid">
+        <div class="demo-copy" data-reveal>
+          <span class="section-kicker light">REQUEST A DEMO</span>
+          <h2>See your supply chain from disruption to decision.</h2>
+          <p>Explore how Synqra can map operational signals across your supply network and bring the right teams into one response workflow.</p>
+        </div>
+        <form class="demo-form" data-demo-form novalidate data-reveal>
+          <div class="form-row">
+            <label for="work-email">Work email</label>
+            <input id="work-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required>
+          </div>
+          <div class="form-row">
+            <label for="company">Company</label>
+            <input id="company" name="company" type="text" autocomplete="organization" placeholder="Company name" required>
+          </div>
+          <button class="button button-light" type="submit">Request a demo <span aria-hidden="true">→</span></button>
+          <p class="form-status" role="status" aria-live="polite" data-form-status></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a class="brand footer-brand" href="#" aria-label="Synqra home">
+        <svg class="brand-mark" viewBox="0 0 36 36" aria-hidden="true">
+          <path d="M18 3.5 29.5 10v16L18 32.5 6.5 26V10L18 3.5Z" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="m11.5 22 6-10 7 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span>synqra</span>
+      </a>
+      <p>AI-native supply-chain command for automotive operations.</p>
+      <a href="#demo">Request a demo</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
